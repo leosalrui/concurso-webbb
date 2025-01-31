@@ -1,78 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <style>
-        li {
-            list-style: none;
+        /* Estilos Generales */
+        html {
+            font-family: 'Montserrat', sans-serif;
+            color: grey;
+            background-color: rgb(44, 44, 44);
+            padding: 0px;
+            margin: 0px;
+        }
+
+        h2,
+        h4 {
+            color: white;
+        }
+
+        /* Estilos Especificos */
+        div.tema {
+            background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 1) 30%, rgba(17, 17, 17, 1) 70%, rgba(255, 255, 255, 0) 100%);
+            padding: 10px;
+        }
+
+        .tema article {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+            gap: 20px;
+            
+        }
+
+        div.tarjeta {
+            border-radius: 10px;
+            padding: 10px;
+            
+        }
+
+        div.tarjeta:hover
+        {
+            background-color: rgb(77, 77, 77);;
+        }
+
+        .tarjeta img {
+            border-radius: 10px;
+            display: block;
+            margin:0 auto;
+        }
+
+        .tarjeta h4{
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
-    <form method="post">
-        <ul>
-            <li>
-                <label for="Contraseña">Password</label>
-                <input id="Contraseña" type="text" value="PEPE">
-            </li>
-            <li>
-                <label for="Contraseña">Password</label>
-                <input id="Contraseña" type="text" placeholder="Introduce contraseña">
-            </li>
-            <li>
-                <label for="Contraseña">Password</label>
-                <input id="Contraseña" type="text">
-            </li>
-            <li>
-                <label for="Contraseña">Password</label>
-                <input id="Contraseña" type="text">
-            </li>
+
+    <!-- Seleccion horizontal de temas -->
+    <div class="tema">
+        <h2>Temas del momento</h2>
+        <!-- Etiqueta contenedora para el Grid -->
+        <article>
+            <!-- Playlist concreta -->
+            <div class="tarjeta">
+                
+                    <img src="album.jpg" width="180px">
+                    <h4>Temazos Chill</h4>
+                    <p>Relajate y deja que la musica te acompañe</p>
+                
+            </div>
 
 
-        </ul>
+            <div class="tarjeta">
+                <img src="album.jpg" width="180px">
+                <h4>Temazos Chill</h4>
+                <P>Relajate y deja que la musica te acompañe</P>
+            </div>
 
-    </form>
 
-    <form action="POst">
-        <div>
-            <label for="Contraseña">Password</label>
-            <input id="Contraseña" type="text">
-        </div>
-        <div>
-            <label for="Contraseña">Password</label>
-            <input id="Contraseña" type="text">
-        </div>
-        <div>
-            <label for="Contraseña">Password</label>
-            <input id="Contraseña" type="text">
-        </div>
-        <div>
-            <label for="Contraseña">Password</label>
-            <input id="Contraseña" type="text">
-        </div>
-        <div>
-            <label for="desplegable">Selecciona tu verdura</label>
-            <select name="Verdura" id="desplegable">
-                <optgroup label="Baratas">
-                    <option value="Tomates">Tomates</option>
-                    <option value="Lechugas">Lechugas</option>
-                </optgroup>
-                <optgroup label="Caras">
-                    <option value="Pimientos" selected>Pimientos</option>
-                    <option value="Setas">Setas</option>
-                </optgroup>
-            </select>
-        </div>
-        <div>
-            <input type="submit" value="Enviar">
-        </div>
+            <div class="tarjeta">
+                <img src="album.jpg" width="180px">
+                <h4>Temazos Chill</h4>
+                <P>Relajate y deja que la musica te acompañe</P>
+            </div>
 
-    </form>
+
+            <div class="tarjeta">
+                <img src="album.jpg" width="180px">
+                <h4>Temazos Chill</h4>
+                <P>Relajate y deja que la musica te acompañe</P>
+            </div>
+        </article>
+    </div>
+
+
+    <div class="tema">
+        <h2>Temas del momento</h2>
+        <article>
+            
+            <div class="tarjeta">
+                
+                    <img src="album.jpg" width="180px">
+                    <h4>Temazos Chill</h4>
+                    <p>Relajate y deja que la musica te acompañe</p>
+                
+            </div>
+
+
+            <div class="tarjeta">
+                <img src="album.jpg" width="180px">
+                <h4>Temazos Chill</h4>
+                <P>Relajate y deja que la musica te acompañe</P>
+            </div>
+
+
+            <div class="tarjeta">
+                <img src="album.jpg" width="180px">
+                <h4>Temazos Chill</h4>
+                <P>Relajate y deja que la musica te acompañe</P>
+            </div>
+
+
+            <div class="tarjeta">
+                <img src="album.jpg" width="180px">
+                <h4>Temazos Chill</h4>
+                <P>Relajate y deja que la musica te acompañe</P>
+            </div>
+        </article>
+    </div>
+
+
+
+    <div class="tema">
+        <h2>Temas del momento</h2>
+        <article>
+            
+            <div class="tarjeta">
+                
+                    <img src="album.jpg" width="180px">
+                    <h4>Temazos Chill</h4>
+                    <p>Relajate y deja que la musica te acompañe</p>
+                
+            </div>
+
+
+            <div class="tarjeta">
+                <img src="album.jpg" width="180px">
+                <h4>Temazos Chill</h4>
+                <P>Relajate y deja que la musica te acompañe</P>
+            </div>
+
+
+            <div class="tarjeta">
+                <img src="album.jpg" width="180px">
+                <h4>Temazos Chill</h4>
+                <P>Relajate y deja que la musica te acompañe</P>
+            </div>
+
+
+            <div class="tarjeta">
+                <img src="album.jpg" width="180px">
+                <h4>Temazos Chill</h4>
+                <P>Relajate y deja que la musica te acompañe</P>
+            </div>
+        </article>
+    </div>
+
+
+
 
 
 </body>
