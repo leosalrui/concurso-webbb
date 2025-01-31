@@ -1,175 +1,89 @@
 <!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Basic input types</title>
     <style>
-        /* Estilos Generales */
-        html {
-            font-family: 'Montserrat', sans-serif;
-            color: grey;
-            background-color: rgb(44, 44, 44);
-            padding: 0px;
-            margin: 0px;
-        }
+      html, input {
+        font-family: sans-serif;
+      }
 
-        h2,
-        h4 {
-            color: white;
-        }
+      body {
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
+      }
 
-        /* Estilos Especificos */
-        div.tema {
-            background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 1) 30%, rgba(17, 17, 17, 1) 70%, rgba(255, 255, 255, 0) 100%);
-            padding: 10px;
-        }
+      form {
+        margin-top: 20px;
+      }
 
-        .tema article {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
-            gap: 20px;
-            
-        }
+      div {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 
-        div.tarjeta {
-            border-radius: 10px;
-            padding: 10px;
-            
-        }
+      label, input, button {
+        font-size: 14px;
+        line-height: 1.5
+      }
 
-        div.tarjeta:hover
-        {
-            background-color: rgb(77, 77, 77);;
-        }
+      label {
+        text-align: right;
+        width: 30%;
+        margin-right: 2%;
+      }
 
-        .tarjeta img {
-            border-radius: 10px;
-            display: block;
-            margin:0 auto;
-        }
+      input {
+        flex: auto;
+      }
 
-        .tarjeta h4{
-            text-align: center;
-        }
+      button {
+        width: 70%;
+        margin: 0 auto;
+      }
+
     </style>
-</head>
+   </head>
+  <body>
+    <form>
+      <div>
+        <label for="text">text input type: </label>
+        <input type="text" id="text" name="text">
+      </div>
+      <div>
+        <label for="pwd">password input type: </label>
+        <input type="password" id="pwd" name="pwd">
+      </div>
+      <div>
+        <label for="email">email input type: </label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div>
+        <label for="url">url input type: </label>
+        <input type="url" id="url" name="url">
+      </div>
+      <div>
+        <label for="number">number input type: </label>
+        <input type="number" id="number" name="number">
+      </div>
+      <div>
+        <label for="tel">tel input type: </label>
+        <input type="tel" id="tel" name="tel">
+      </div>
+      <div>
+        <label for="search">search input type: </label>
+        <input type="search" id="search" name="search">
+      </div>
+      <div>
+        <button>Submit</button>
+      </div>
+    </form>
+    <script>
 
-<body>
-
-    <!-- Seleccion horizontal de temas -->
-    <div class="tema">
-        <h2>Temas del momento</h2>
-        <!-- Etiqueta contenedora para el Grid -->
-        <article>
-            <!-- Playlist concreta -->
-            <div class="tarjeta">
-                
-                    <img src="album.jpg" width="180px">
-                    <h4>Temazos Chill</h4>
-                    <p>Relajate y deja que la musica te acompañe</p>
-                
-            </div>
-
-
-            <div class="tarjeta">
-                <img src="album.jpg" width="180px">
-                <h4>Temazos Chill</h4>
-                <P>Relajate y deja que la musica te acompañe</P>
-            </div>
-
-
-            <div class="tarjeta">
-                <img src="album.jpg" width="180px">
-                <h4>Temazos Chill</h4>
-                <P>Relajate y deja que la musica te acompañe</P>
-            </div>
-
-
-            <div class="tarjeta">
-                <img src="album.jpg" width="180px">
-                <h4>Temazos Chill</h4>
-                <P>Relajate y deja que la musica te acompañe</P>
-            </div>
-        </article>
-    </div>
-
-
-    <div class="tema">
-        <h2>Temas del momento</h2>
-        <article>
-            
-            <div class="tarjeta">
-                
-                    <img src="album.jpg" width="180px">
-                    <h4>Temazos Chill</h4>
-                    <p>Relajate y deja que la musica te acompañe</p>
-                
-            </div>
-
-
-            <div class="tarjeta">
-                <img src="album.jpg" width="180px">
-                <h4>Temazos Chill</h4>
-                <P>Relajate y deja que la musica te acompañe</P>
-            </div>
-
-
-            <div class="tarjeta">
-                <img src="album.jpg" width="180px">
-                <h4>Temazos Chill</h4>
-                <P>Relajate y deja que la musica te acompañe</P>
-            </div>
-
-
-            <div class="tarjeta">
-                <img src="album.jpg" width="180px">
-                <h4>Temazos Chill</h4>
-                <P>Relajate y deja que la musica te acompañe</P>
-            </div>
-        </article>
-    </div>
-
-
-
-    <div class="tema">
-        <h2>Temas del momento</h2>
-        <article>
-            
-            <div class="tarjeta">
-                
-                    <img src="album.jpg" width="180px">
-                    <h4>Temazos Chill</h4>
-                    <p>Relajate y deja que la musica te acompañe</p>
-                
-            </div>
-
-
-            <div class="tarjeta">
-                <img src="album.jpg" width="180px">
-                <h4>Temazos Chill</h4>
-                <P>Relajate y deja que la musica te acompañe</P>
-            </div>
-
-
-            <div class="tarjeta">
-                <img src="album.jpg" width="180px">
-                <h4>Temazos Chill</h4>
-                <P>Relajate y deja que la musica te acompañe</P>
-            </div>
-
-
-            <div class="tarjeta">
-                <img src="album.jpg" width="180px">
-                <h4>Temazos Chill</h4>
-                <P>Relajate y deja que la musica te acompañe</P>
-            </div>
-        </article>
-    </div>
-
-
-
-
-
+    </script>
 </body>
-
-</html>
+  </html>
